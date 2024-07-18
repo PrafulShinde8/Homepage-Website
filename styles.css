@@ -1,0 +1,262 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Set background color to white */
+}
+
+/* Header Section */
+header {
+    background: #fff; /* Set header background color to white */
+    padding: 50px 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+    justify-content: left;
+}
+#contactUsBtn {
+    background-color: rgb(233, 23, 58);
+    border: none;
+}
+
+#contactUsBtn:hover {
+    background-color: #d30d3a; /* Slightly darker shade */
+}
+
+/* What We Do Section */
+#whatWeDo {
+    text-align: center;
+}
+#whatWeDo h2 {
+    color: rgb(233, 23, 58);
+}
+
+#whatWeDo h3 {
+    color: black;
+    font-weight: bold;
+}
+#whatWeDo .message {
+    color: #000;
+    font-weight: normal;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    justify-content: center;
+}
+
+.slide {
+    width: 600px; /* Standard width */
+    height: 600px; /* Standard height */
+    display: none;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.slide.active {
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.slide:hover .overlay {
+    opacity: 1;
+}
+
+.read-more {
+    background-color: rgb(233, 23, 58);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: none;
+}
+
+.slide:nth-child(3):hover .read-more {
+    display: block;
+}
+
+.dots {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+/* Project Section */
+#ourProject {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#ourProject h2 {
+    color: rgb(233, 23, 58); /* Set color for OUR PROJECT */
+    margin-bottom: 20px;
+}
+
+#ourProject h3 {
+    color: black; /* Set color for SERVICES PROVIDE FOR YOU */
+    font-weight: bold;
+}
+#projectImage {
+    width: 500px; /* Standard width */
+    height: 500px; /* Standard height */
+    margin: 0 auto;
+    display: block;
+}
+
+ul.list-group {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+ul.list-group li {
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 5px;
+    background-color: #f1eeee; /* Default background color */
+    border: 1px solid  #f1eeee;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    color: #000; /* Text color for project items */
+}
+
+ul.list-group li:hover {
+    background-color: rgb(233, 23, 58); /* Color on hover */
+    color: #fff; /* Text color on hover */
+}
+
+ul.list-group li.active {
+    background-color: rgb(233, 23, 58); /* Color when active (clicked) */
+    color: #fff; /* Text color when active */
+}
+
+/* Expertise and Growth Section */
+#expertGrowths {
+    text-align: center;
+    margin-top: 50px;
+    background-color: rgb(241, 238, 238);
+}
+
+#expertGrowths h2:first-of-type {
+    color: rgb(233, 23, 58);
+    margin-bottom: 30px;
+}
+
+#expertGrowths h2:last-of-type {
+    color: black;
+    margin-bottom: 30px;
+}
+
+.grey-box {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px 0;
+}
+
+.grey-box:hover {
+    background-color: #fff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.grey-box img {
+    width: 50px;
+    height: 50px;
+}
+
+.grey-box h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.grey-box p {
+    font-size: 16px;
+    margin: 0;
+}
+/* Contact Us Section */
+#contactForm {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #fff;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+

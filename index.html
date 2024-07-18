@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="container-fluid py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1 style="color: rgb(233, 23, 58);">AWARD WINNING</h1>
+                <h1 style="font-weight: bold;">DIGITAL MARKETING AGENCY</h1>
+                <h2>Our digital marketing agency elevates the online presence of perfume shampoos and premium fruits, crafting targeted campaigns that captivate and convert. Let us enhance your brand's allure and drive your sales growth.</h2>
+                <button id="contactUsBtn" class="btn btn-primary">Contact Us</button>
+            </div>
+            <div class="col-md-6">
+                <img src="assets/images/hero.png" alt="Hero-Image" class="img-fluid mx-auto d-block">
+            </div>
+        </div>
+    </header>
+
+    <!-- What We Do Section -->
+    <section id="whatWeDo" class="container my-5">
+        <h2 class="text-left">WHAT WE DO</h2>
+        
+        <div class="d-flex align-items-center justify-content-start">
+            <h3>SERVICES PROVIDE FOR YOU</h3>
+            <p class="message ml-3">The perfect blend of luxury and nature with our exquisite perfume shampoos and fresh, premium fruits. Elevate your senses and indulge in pure, invigorating delight every day.</p>
+        </div>
+        <div class="slider">
+            <div class="slider-container">
+                <div class="slide active">
+                    <img src="assets/images/image1.png" alt="Image 1">
+                    <div class="overlay"></div>
+                </div>
+                <div class="slide">
+                    <img src="assets/images/image2.png" alt="Image 2">
+                    <div class="overlay"></div>
+                </div>
+                <div class="slide">
+                    <img src="assets/images/image3.png" alt="Image 3">
+                    <div class="overlay">
+                        <a href="https://fylehq.com" target="_blank" class="read-more btn btn-primary">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dots text-center">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+    <!-- Our Project Section -->
+    <section id="ourProject" class="container my-5">
+    <h2 class="text-center">OUR PROJECT</h2>
+    <h3>WHY WE ARE BEST</h3>
+    <div class="row">
+        <div class="col-md-8">
+            <img id="projectImage" src="assets/images/project1.png" alt="Project Image" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+            <ul class="list-group">
+                <li class="list-group-item" data-image="assets/images/project1.png">Savor the sweet, juicy flavor of our premium muskmelons. Handpicked for peak freshness, they're perfect for a healthy snack or a delicious addition to your meals. Enjoy a taste of summer with every bite!</li>
+                <li class="list-group-item" data-image="assets/images/project2.png">Savor the deliciousness of our premium fruits: sweet bananas, crisp apples, juicy grapes, and succulent cherries. Perfect for healthy snacks or adding natural flavor to your meals, enjoy nature's best in every bite!</li>
+                <li class="list-group-item" data-image="assets/images/project3.png">Experience the allure of our premium perfumes. Each fragrance is crafted to captivate, offering a perfect blend of elegance and charm. Elevate your presence with every spritz, and let our scents tell your unique story.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Expertise and Growth Section -->
+<section id="expertGrowths" class="container my-5">
+    <h2>EXPERT GROWTHS</h2>
+    <h2>OUR COMPANY GROWTH</h2>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="grey-box">
+                <img src="assets/images/heart.png" alt="Heart">
+                <h3>199+</h3>
+                <p>Satisfied Customers</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="grey-box">
+                <img src="assets/images/clock.png" alt="Clock">
+                <h3>1591+</h3>
+                <p>Days of Operation</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="grey-box">
+                <img src="assets/images/project.png" alt="Project">
+                <h3>283+</h3>
+                <p>Complete Projects</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="grey-box">
+                <img src="assets/images/award.png" alt="Award">
+                <h3>75+</h3>
+                <p>Win Awards</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Pop-up Form -->
+    <div id="contactForm" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="form" action="https://getform.io/f/YOUR_ENDPOINT" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
